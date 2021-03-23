@@ -59,7 +59,7 @@ console.log(req.params)
 
 // //answers controllers
 exports.answerGetController = (req, res) => {
-  axios.get(`http://localhost:3000/qa/questions/${req.params.question_id}/answers`)
+  axios.get(`http://localhost:3000/qa/questions/${req.params.question_id}/answers?page=${req.query.page}&count=${req.query.count}`)
     .then((result) => {
       res.send(result.data)
     })
