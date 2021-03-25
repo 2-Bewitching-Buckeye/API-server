@@ -8,6 +8,7 @@ const port = 3003;
 app.use(express.json());
 
 app.use('/products', productRouter);
+app.use('/reviews', reviewsRouter);
 
 
 app.listen(port, ()=> {
