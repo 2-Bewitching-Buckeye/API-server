@@ -1,9 +1,10 @@
 const express = require('express');
 const axios = require('axios');
 const productRouter = require('./routes/productRouter.js');
+const reviewsRouter = require('./routes/reviewsRouter.js');
 
 const app = express();
-const port = 3003;
+const port = 3000;
 
 app.use(express.json());
 
