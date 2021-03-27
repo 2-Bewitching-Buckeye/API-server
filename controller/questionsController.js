@@ -5,7 +5,6 @@ exports.questionsGetController = (req, res) => {
   var query = req.query;
   axios.get(`http://localhost:3000/qa/questions/?product_id=${query.product_id}&count=${query.count}&page=${query.page}`)
     .then((result) => {
-      console.log(result.data)
       res.send(result.data)
     })
     .catch((err) => {
